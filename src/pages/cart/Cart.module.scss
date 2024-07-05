@@ -1,0 +1,127 @@
+
+.cart {
+  width: 100%;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  .cartItem {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    @media (max-width: 1024px) {
+      width: 80%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .productPhoto {
+      width: 100px;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    .productInfo {
+      width: 100%;
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      h3 {
+        margin: 0;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+
+      .actionButton {
+        margin-left: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        background-color: #f0f0f0;
+        color: #333;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          background-color: #ccc;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .emptyCartMessage {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .cartSummary {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+
+    p {
+      margin: 5px 0;
+    }
+  }
+
+  .orderForm {
+    margin-top: 20px;
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    form {
+      margin: 0 auto;
+      max-width: max-content;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      label {
+        margin-bottom: 10px;
+
+        input {
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+      }
+
+      button {
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        background-color: #f0f0f0;
+        color: #333;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        width: 100px;
+        align-self: flex-end;
+
+        &:hover {
+          background-color: #ccc;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
