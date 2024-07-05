@@ -1,9 +1,10 @@
 $primary-color: #48a74b;
-$secondary-color: #61dafb;
+$secondary-color: #d4d4d4;
 $background-color: #f0f0f0;
 $text-color: #333;
 
 .app {
+  margin-top: 60px;
   text-align: center;
   background-color: $background-color;
   min-height: 100vh;
@@ -15,6 +16,9 @@ $text-color: #333;
 }
 
 .app-header {
+  position: fixed;
+  left: 0;
+  top: 0;
   background-color: $primary-color;
   width: 100%;
   padding: 20px;
